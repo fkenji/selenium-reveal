@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Selenium Conf 2013</title>
+
+    <meta name="description" content="Selenium Conf 2013">
+    <meta name="author" content="Fabio Kenji Kume">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/selenium.css" id="theme">
+
+    <link rel="stylesheet" href="css/jquery-photowall.css">
+
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <script>
+    document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+
+                <section id="title">
+                    <h1>Selenium Conf<span>2013</span></h1>
+                </section>
+
+                <section id="about-me">
+                    <img src="images/smile.png"></img>
+
+                    <ul>
+                        <li class="twitter">@seibzhen</li>
+                        <li>github.com/<span class="github">fkenji</span></li>
+                        <li>PagSeguro <span class="pagseguro-team">Manchester</span></li>
+                        <li>l-scrum-manchester@uolinc.com</li>
+
+                    </ul>
+                </section>
+
+                <section class="boston" id="boston-wall" data-background="#3A85D6">
+                    <h1>Boston</h1>
+
+                    <div id="gallery">
+                        <div class="body">
+                        </div>
+                    </div>                 
+                </section>
+
+
+                <section class="boston" id="boston-strong" data-background="#3A85D6" data-transition="none">
+                    <h1>Boston</h1>
+                    <img src="images/BostonStrongRibbon.png"> </img> 
+                </section>
+
+                <section class="dark-slide" id="the-event" data-background="#5E525C">
+
+                    <h1>O Evento</h1>
+
+                    <img class="fragment" src="images/sauce-labs-logo.png"> </png>
+                </section>
+
+
+                <section class="dark-slide" id="agenda" data-background="#5E525C">
+                        <h1>Topicos</h1>           
+                </section>
+
+                <section class="dark-slide"  data-background="#5E525C">               
+                    <section id="como-estao">
+                        <h1>Como estao usando o Selenium?</h1>
+
+                        <p>. . . . . . .</p>
+                        <img src="images/salesforce.png"></img>
+                        <p>. . . . . . .</p>                   
+                        <img src="images/fb.png"></img> 
+                        <p>. . . . . . .</p>            
+                        <img src="images/groupon.png"></img>                            
+                    </section>
+
+                    <section id="ferramentas">
+                        <h1>Ferramentas</h1>
+                        <ul>
+                            <li>appium (mobile)
+                            <li>selenium builder
+                        </ul>
+                    </section>
+
+                    <section id="inovacoes">
+                        <h1>Inovacoes</h1>
+                        <ul>
+                            <li>Continuous Improvement | noah sussmann
+                            <li>State of the Union | simon stewart
+                        </ul>
+                    </section>
+
+                </section>    
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-photowall.js"></script>
+        <script src="js/photowall-builder.js"></script>
+
+        <script>
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    ]
+                });
+            
+
+        </script>
+
+</body>
+</html>

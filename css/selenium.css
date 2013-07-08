@@ -1,0 +1,93 @@
+/*
+Palette:
+http://www.colourlovers.com/palette/2398684/Speechless
+http://www.colourlovers.com/palette/2505309/Colorful_Day
+
+
+
+red EC4401
+    D6332B
+brown CC9B25
+orange FF6A00
+green 13CD4A
+      4DD62B
+
+blue 7B6ED6
+     3A85D6
+
+dark 5E525C
+
+* possibly add SE logo at title;
+* add font-faces
+
+*/
+@font-face {
+  font-family: "Klinic Slab Book";
+  src: url("../fonts/KlinicSlabBook.otf"); }
+
+@font-face {
+  font-family: "Klinic Slab Bold";
+  src: url("../fonts/KlinicSlabBold.otf"); }
+
+@font-face {
+  font-family: "Franchise";
+  src: url("../fonts/Franchise-Bold.ttf"); }
+
+body {
+  background-color: white; }
+
+.reveal {
+  font-family: 'Yanone Kaffeesatz';
+  color: #5e525c;
+  font-size: 36px; }
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  line-height: 0.9em;
+  /*
+  letter-spacing: 0.02em; 
+  */
+  text-transform: uppercase; }
+
+/*
+  credentials
+*/
+.github {
+  font-weight: bolder;
+  color: #ec4401; }
+
+.pagseguro-team {
+  font-weight: bold;
+  color: #ec4401; }
+
+section.boston {
+  color: #ffe700;
+  font-family: 'Franchise'; }
+
+.dark-slide {
+  color: #ec4401; }
+
+/*
+    Slide-specific
+*/
+#title {
+  font-family: 'Franchise'; }
+  #title h1 {
+    font-size: 200px;
+    color: #ec4401; }
+  #title span {
+    font-size: 200px;
+    color: #5e525c; }
+
+#about-me img {
+  padding-bottom: 1.5em;
+  padding-right: 4em; }
+#about-me ul {
+  list-style-type: none; }
+#about-me ul li {
+  padding-top: 0.7em; }

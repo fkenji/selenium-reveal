@@ -1,0 +1,121 @@
+/*
+Palette:
+http://www.colourlovers.com/palette/215539/Yellow_Tree_Frog
+
+red E73F3F
+orange F76C27
+
+yellow E7E737
+yellow bs FFE700
+
+weak blue 6D9DD1
+blue bs 234CAA
+blue fb 3B5998
+
+purple 7E45D3
+
+green 4AA482
+green 5A8C52
+
+http://www.colourlovers.com/palette/2398684/Speechless
+
+*/
+
+@font-face {
+  font-family: "Klinic Slab Book";
+  src: url("../fonts/KlinicSlabBook.otf");
+}
+
+@font-face {
+  font-family: "Klinic Slab Bold";
+  src: url("../fonts/KlinicSlabBold.otf");
+}
+
+@font-face {
+  font-family: "Franchise";
+  src: url("../fonts/Franchise-Bold.ttf");
+}
+
+body {
+  background-color: #4AA482;
+}
+
+.reveal {
+  font-family: "Franchise";
+  color: #FFF;
+  font-size: 36px;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  line-height: 0.9em;
+  /*
+  letter-spacing: 0.02em; 
+  */
+  text-transform: uppercase;
+}
+
+/*
+.twitter {
+  background-repeat: no-repeat;
+  background-position: left 10px;
+  background-image: url("../images/twitter.png");
+  background-size: 60px;
+}
+*/
+
+/*
+  credentials
+*/
+.github {
+  font-weight: bolder;
+  color:black;
+}
+
+.pagseguro-team {
+  font-weight: bold;
+  color:#E73F3F;
+}
+
+
+
+/*
+    Slide-specific
+*/
+#title h1 {
+    font-size: 200px;
+    color:#fff;
+}   
+
+#title span {
+    font-size: 200px;
+    color: brown;
+}
+
+#about-me img {
+  padding-bottom:1.5em;
+  padding-right: 4em;
+}
+
+#about-me ul {
+  list-style-type: none;
+  font-family: 'Yanone Kaffeesatz';
+}
+
+#about-me ul li{
+  padding-top: 0.7em;
+}
+
+.boston {
+  color: #FFE700;
+}
+
+#agenda {
+  font-family: 'KlinicSlabBook';
+  font-size: 20px;  
+}
