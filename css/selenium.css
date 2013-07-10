@@ -19,6 +19,8 @@ dark 5E525C
 
 * possibly add SE logo at title;
 * add font-faces
+* tamanho das fontes
+  * variar as fontes
 
 */
 @font-face {
@@ -49,10 +51,22 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   line-height: 0.9em;
-  /*
-  letter-spacing: 0.02em; 
-  */
   text-transform: uppercase; }
+
+quote {
+  font-style: italic;
+  font-size: 50px; }
+
+span.huge {
+  font-size: 250px; }
+
+span.blockish {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
+span.dark-highlight-bg {
+  color: white; }
 
 /*
   credentials
@@ -91,3 +105,28 @@ section.boston {
   list-style-type: none; }
 #about-me ul li {
   padding-top: 0.7em; }
+
+.como-estao div {
+  webkit-transform: rotate(90deg);
+  font-size: 50px;
+  right: 14px; }
+.como-estao ul {
+  list-style-type: none; }
+
+.salesforce {
+  color: #5e525c; }
+
+#salesforce-grid h1 {
+  font-size: 200px;
+  color: #3a85d6; }
+#salesforce-grid ul {
+  list-style-type: none; }
+  #salesforce-grid ul li {
+    display: inline;
+    padding-left: 0.7em; }
+
+#salesforce-why ul li {
+  padding-top: 0.4em; }
+
+.cars {
+  color: white; }

@@ -127,6 +127,8 @@ Salesforce.com ** revisar na apresentação real
 
     * Na nuvem
 
+    * autotest / flakey detector (if it passed historically and started failing..)
+
 
 Corrigirás o teste
 ---
@@ -138,7 +140,7 @@ Corrigirás o teste
 
 Mas.. e o Selenium grid?
 ---
-
+    * solucao caseira
     * VM "degradavam" com o tempo => reboot das maquinas
     * Não utilizavam todo o poder computacional
 
@@ -151,7 +153,7 @@ Enter the cloud
     * "Mas... não demora muito para provisionar máquinas?"
         * provisionamento pré-execução baseado nas rodadas anteriores
 
-    * no open-source!    
+    * vm templates
 
 =====================================================
 
@@ -159,7 +161,18 @@ Cars.com
 ===
 
 * Scrum
+* from manual to automated: 100 hours to 2
+
+* releases we've had in 2011 vs today
+    (40) to 700
+
+    -> PS: 40 / 50 releases por ano
+        -> numero deles: 2-3 releases por dia?
+
 * ~90% time taken by tests reduced (235 hours => 4.5hrs)
+
+* smoke and core tests run daily / regression when pushed to new env
+* ibm build forge
 
 Tools, tools, tools
 ---
@@ -167,15 +180,16 @@ Tools, tools, tools
     * grid
     * testng
     * vmware
-    * compuware apm / dynatrace
-    * sqllite
-    * sikuli
+    * compuware apm / dynatrace (identify performance issues) -> page load times, jvm monitor
+    *regression monitored by that tool
+    * sqllite -> para dados nos testes
+    * sikuli -> interagir com flash
     * hp quality center
     * buildforge
 
 * they try to automate tests along with features being developed, but don't always get it
 
-* 3000 tests per build
+* 3000 selenium tests per build
 
 * categorized tests: smoke, regression. 
     * CI runs smoke tests

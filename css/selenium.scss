@@ -19,6 +19,8 @@ dark 5E525C
 
 * possibly add SE logo at title;
 * add font-faces
+* tamanho das fontes
+  * variar as fontes
 
 */
 
@@ -31,6 +33,12 @@ $main_font_color:#5E525C;
 $contrast_color:#EC4401;
 
 $boston_font_color:#FFE700;
+
+$jclouds_font_color: #3A85D6;
+
+$salesforce_main_font_color: #5E525C;
+$cars_main_font_color: #fff;
+
 
 
 @font-face {
@@ -66,12 +74,27 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   line-height: 0.9em;
-  /*
-  letter-spacing: 0.02em; 
-  */
   text-transform: uppercase;
 }
 
+quote {
+    font-style: italic;
+    font-size : 50px;
+}
+
+span.huge {
+    font-size: 250px;
+}
+
+span.blockish {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+span.dark-highlight-bg {
+    color:white;
+}
 
 /*
   credentials
@@ -129,3 +152,49 @@ section.boston {
     }
 }
 
+.como-estao {
+
+    div {
+        webkit-transform: rotate(90deg); 
+        
+        font-size: 50px;   
+        right:14px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+.salesforce {
+  color: $salesforce_main_font_color;
+}
+
+#salesforce-grid {
+  h1 {
+    font-size: 200px ;
+    color: $jclouds_font_color;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline;
+      padding-left: 0.7em;
+    }
+  }
+}
+
+#salesforce-why {
+  ul {
+
+    li {
+      padding-top: 0.4em;
+    }
+  }
+}
+
+.cars {
+  color:$cars_main_font_color;
+}
