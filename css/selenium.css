@@ -21,6 +21,8 @@ dark 5E525C
 * add font-faces
 * tamanho das fontes
   * variar as fontes
+* adicionar o icone do cars.com
+
 
 */
 @font-face {
@@ -41,7 +43,7 @@ body {
 .reveal {
   font-family: 'Yanone Kaffeesatz';
   color: #5e525c;
-  font-size: 36px; }
+  font-size: 44px; }
 
 .reveal h1,
 .reveal h2,
@@ -53,80 +55,79 @@ body {
   line-height: 0.9em;
   text-transform: uppercase; }
 
-quote {
-  font-style: italic;
-  font-size: 50px; }
-
-span.huge {
-  font-size: 250px; }
-
-span.blockish {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em; }
-
-span.dark-highlight-bg {
-  color: white; }
-
-/*
-  credentials
-*/
-.github {
-  font-weight: bolder;
-  color: #ec4401; }
-
-.pagseguro-team {
-  font-weight: bold;
-  color: #ec4401; }
-
-section.boston {
-  color: #ffe700;
-  font-family: 'Franchise'; }
-
-.dark-slide {
-  color: #ec4401; }
-
-/*
-    Slide-specific
-*/
-#title {
-  font-family: 'Franchise'; }
-  #title h1 {
-    font-size: 200px;
+.reveal {
+  /*
+    credentials
+  */
+  /*
+      Slide-specific
+  */ }
+  .reveal quote {
+    font-style: italic;
+    font-size: 50px; }
+  .reveal span.huge {
+    font-size: 250px; }
+  .reveal span.big {
+    font-size: 150px; }
+  .reveal p.dictionary {
+    font-family: 'Klinic Slab Book';
+    margin-top: 40px; }
+    .reveal p.dictionary .feature {
+      display: block;
+      color: #fff; }
+  .reveal .blockish {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+  .reveal span.dark-highlight-bg {
+    color: white; }
+  .reveal p.autotest {
+    font-size: 150px;
+    font-family: 'Franchise'; }
+  .reveal span.huh {
+    font-size: 70px;
+    color: #fff; }
+  .reveal .github {
     color: #ec4401; }
-  #title span {
-    font-size: 200px;
+  .reveal .pagseguro-team {
+    color: #ec4401; }
+  .reveal .boston {
+    color: #ffe700;
+    font-family: 'Franchise'; }
+  .reveal .dark-slide {
+    color: #ec4401; }
+  .reveal #title {
+    font-family: 'Franchise'; }
+    .reveal #title h1 {
+      font-size: 200px;
+      color: #ec4401; }
+    .reveal #title span {
+      font-size: 200px;
+      color: #5e525c; }
+  .reveal #about-me img {
+    padding-bottom: 1.5em;
+    padding-right: 4em; }
+  .reveal #about-me ul {
+    list-style-type: none; }
+  .reveal #about-me ul li {
+    padding-top: 0.7em; }
+  .reveal .como-estao ul {
+    list-style-type: none; }
+  .reveal .salesforce {
     color: #5e525c; }
-
-#about-me img {
-  padding-bottom: 1.5em;
-  padding-right: 4em; }
-#about-me ul {
-  list-style-type: none; }
-#about-me ul li {
-  padding-top: 0.7em; }
-
-.como-estao div {
-  webkit-transform: rotate(90deg);
-  font-size: 50px;
-  right: 14px; }
-.como-estao ul {
-  list-style-type: none; }
-
-.salesforce {
-  color: #5e525c; }
-
-#salesforce-grid h1 {
-  font-size: 200px;
-  color: #3a85d6; }
-#salesforce-grid ul {
-  list-style-type: none; }
-  #salesforce-grid ul li {
-    display: inline;
-    padding-left: 0.7em; }
-
-#salesforce-why ul li {
-  padding-top: 0.4em; }
-
-.cars {
-  color: white; }
+  .reveal #salesforce-grid h1 {
+    font-size: 200px;
+    color: #3a85d6; }
+  .reveal #salesforce-grid ul {
+    list-style-type: none; }
+    .reveal #salesforce-grid ul li {
+      display: inline;
+      padding-left: 0.7em; }
+  .reveal #salesforce-why ul li {
+    padding-top: 0.4em; }
+  .reveal #salesforce-flaky {
+    color: #ec4401; }
+  .reveal .cars {
+    color: white; }
+  .reveal #salesforce-commit {
+    color: #ec4401; }

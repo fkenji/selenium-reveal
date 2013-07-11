@@ -284,6 +284,8 @@ So, what do we get from all of this?
     * speed > completeness => results in 10 minutes
     * convince people to write more focused tests  => jasmine, for example
 
+    * flakyness detector
+
 =====================================================
 
 New tools

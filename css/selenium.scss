@@ -21,22 +21,41 @@ dark 5E525C
 * add font-faces
 * tamanho das fontes
   * variar as fontes
+* adicionar o icone do cars.com
+
 
 */
 
+$red_1: #EC4401;
+$red_2: #D6332B;
+
+$brown: #CC9B25;
+
+$orange: #FF6A00;
+
+$green_1: #13CD4A;
+$green_2: #4DD62B;
+
+$blue_1: #7B6ED6;
+$blue_2: #3A85D6;
+
+$dark: #5E525C;
+
+$yellow: #FFE700;
+
 
 $main_bg_color: #fff;
-$title_font_color: #EC4401;
-$subtitle_font_color: #5E525C;
+$title_font_color: $red_1;
+$subtitle_font_color: $dark;
 
 $main_font_color:#5E525C;
-$contrast_color:#EC4401;
+$contrast_color: $red_1;
 
-$boston_font_color:#FFE700;
+$boston_font_color: $yellow;
 
-$jclouds_font_color: #3A85D6;
+$jclouds_font_color: $blue_2;
 
-$salesforce_main_font_color: #5E525C;
+$salesforce_main_font_color: $dark;
 $cars_main_font_color: #fff;
 
 
@@ -63,7 +82,7 @@ body {
 .reveal {
   font-family: 'Yanone Kaffeesatz';
   color: $main_font_color;
-  font-size: 36px;
+  font-size: 44px;
 }
 
 .reveal h1,
@@ -76,125 +95,154 @@ body {
   line-height: 0.9em;
   text-transform: uppercase;
 }
+.reveal {
 
-quote {
-    font-style: italic;
-    font-size : 50px;
-}
-
-span.huge {
-    font-size: 250px;
-}
-
-span.blockish {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-span.dark-highlight-bg {
-    color:white;
-}
-
-/*
-  credentials
-*/
-.github {
-  font-weight: bolder;
-  color: $contrast_color
-}
-
-.pagseguro-team {
-  font-weight: bold;
-  color: $contrast_color
-}
-
-section.boston {
-  color: $boston_font_color;
-  font-family: 'Franchise';
-}
-
-.dark-slide {
-    color: $contrast_color;
-}
-
-
-/*
-    Slide-specific
-*/
-
-#title {
-    font-family: 'Franchise';
-    h1 {
-        font-size: 200px;
-        color: $title_font_color;
-    }   
-
-    span {
-        font-size: 200px;
-        color: $subtitle_font_color;
-    }    
-}
-
-#about-me {
-
-    img {
-      padding-bottom:1.5em;
-      padding-right: 4em;
+    quote {
+        font-style: italic;
+        font-size : 50px;
     }
 
-    ul {
-      list-style-type: none;      
+    span.huge {
+        font-size: 250px;
     }
 
-    ul li {
-        padding-top: 0.7em;
-    }
-}
-
-.como-estao {
-
-    div {
-        webkit-transform: rotate(90deg); 
-        
-        font-size: 50px;   
-        right:14px;
+    span.big {
+        font-size: 150px;
     }
 
-    ul {
-        list-style-type: none;
+    p.dictionary {
+      font-family: 'Klinic Slab Book'; 
+      margin-top: 40px;
+
+      .feature {
+        display: block;
+        color: #fff;
+      }
     }
-}
 
-.salesforce {
-  color: $salesforce_main_font_color;
-}
-
-#salesforce-grid {
-  h1 {
-    font-size: 200px ;
-    color: $jclouds_font_color;
-  }
-
-  ul {
-    list-style-type: none;
-
-    li {
-      display: inline;
-      padding-left: 0.7em;
+    .blockish {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
-  }
-}
 
-#salesforce-why {
-  ul {
-
-    li {
-      padding-top: 0.4em;
+    span.dark-highlight-bg {
+        color:white;
     }
-  }
-}
 
-.cars {
-  color:$cars_main_font_color;
+    p.autotest {
+      font-size:150px; 
+      font-family: 'Franchise'; 
+      
+    }
+
+    span.huh {
+      font-size: 70px;
+      color: #fff;
+    }
+
+
+
+    /*
+      credentials
+    */
+    .github {
+      color: $contrast_color
+    }
+
+    .pagseguro-team {
+      color: $contrast_color
+    }
+
+    .boston {
+      color: $boston_font_color;
+      font-family: 'Franchise';
+    }
+
+    .dark-slide {
+        color: $contrast_color;
+    }
+
+
+    /*
+        Slide-specific
+    */
+
+    #title {
+        font-family: 'Franchise';
+        h1 {
+            font-size: 200px;
+            color: $title_font_color;
+        }   
+
+        span {
+            font-size: 200px;
+            color: $subtitle_font_color;
+        }    
+    }
+
+    #about-me {
+
+        img {
+          padding-bottom:1.5em;
+          padding-right: 4em;
+        }
+
+        ul {
+          list-style-type: none;      
+        }
+
+        ul li {
+            padding-top: 0.7em;
+        }
+    }
+
+    .como-estao {
+
+        ul {
+            list-style-type: none;
+        }
+    }
+
+    .salesforce {
+      color: $salesforce_main_font_color;
+    }
+
+    #salesforce-grid {
+        h1 {
+          font-size: 200px ;
+          color: $jclouds_font_color;
+        }
+
+        ul {
+          list-style-type: none;
+
+          li {
+            display: inline;
+            padding-left: 0.7em;
+          }
+        }
+    }
+
+    #salesforce-why {
+        ul {
+
+          li {
+            padding-top: 0.4em;
+          }
+        }
+    }
+
+    #salesforce-flaky {
+      color: $red_1;
+    }
+
+    .cars {
+      color: $cars_main_font_color;
+    }
+
+    #salesforce-commit {
+      color: $red_1;
+    }
+
 }
