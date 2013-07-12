@@ -111,8 +111,10 @@ body {
     list-style-type: none; }
   .reveal #about-me ul li {
     padding-top: 0.7em; }
-  .reveal .como-estao ul {
-    list-style-type: none; }
+  .reveal #como-estao .companies {
+    margin-top: 0.7em; }
+    .reveal #como-estao .companies img {
+      margin-left: 1em; }
   .reveal .salesforce {
     color: #5e525c; }
   .reveal #salesforce-grid h1 {
@@ -131,3 +133,19 @@ body {
     color: white; }
   .reveal #salesforce-commit {
     color: #ec4401; }
+  .reveal #cars-testing span {
+    color: #3a85d6; }
+  .reveal #cars-releases #bottom-shoryuken {
+    position: absolute;
+    bottom: -60px;
+    left: -20px; }
+  .reveal #cars-releases #low-blow {
+    color: orange;
+    font-size: 100px; }
+  .reveal #cars-releases #high-blow {
+    color: #d6332b;
+    font-size: 150px; }
+  .reveal #cars-releases #top-shoryuken {
+    position: absolute;
+    top: -20px;
+    right: -20px; }

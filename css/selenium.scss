@@ -48,7 +48,7 @@ $main_bg_color: #fff;
 $title_font_color: $red_1;
 $subtitle_font_color: $dark;
 
-$main_font_color:#5E525C;
+$main_font_color: $dark;
 $contrast_color: $red_1;
 
 $boston_font_color: $yellow;
@@ -197,10 +197,13 @@ body {
         }
     }
 
-    .como-estao {
+    #como-estao {
 
-        ul {
-            list-style-type: none;
+        .companies {
+          margin-top: 0.7em;
+          img {              
+              margin-left: 1em;
+          }
         }
     }
 
@@ -243,6 +246,37 @@ body {
 
     #salesforce-commit {
       color: $red_1;
+    }
+
+    #cars-testing {
+      span {
+        color: $blue_2;
+      }
+    }
+
+    #cars-releases {
+          
+      #bottom-shoryuken {
+        position: absolute;
+        bottom: -60px;
+        left:   -20px;
+      }
+
+      #low-blow {
+        color:orange; 
+        font-size:100px;
+      }
+
+      #high-blow {        
+        color:$red_2; 
+        font-size:150px;
+      }      
+
+      #top-shoryuken {
+        position: absolute;
+        top:     -20px;
+        right:   -20px;
+      }          
     }
 
 }
