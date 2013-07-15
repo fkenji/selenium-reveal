@@ -10,7 +10,7 @@ red EC4401
 brown CC9B25
 orange FF6A00
 green 13CD4A
-      4DD62B
+      }
 
 blue 7B6ED6
      3A85D6
@@ -23,7 +23,7 @@ dark 5E525C
   * variar as fontes
 * adicionar o icone do cars.com
 
-
+recomendar talk sobre IE Driver
 */
 @font-face {
   font-family: "Klinic Slab Book";
@@ -149,3 +149,26 @@ body {
     position: absolute;
     top: -20px;
     right: -20px; }
+  .reveal #cars-ps-comparison {
+    color: #13cd4a; }
+  .reveal #releases-ps {
+    display: inline; }
+  .reveal #releases-ps-number {
+    font-size: 250px; }
+  .reveal #facebook-title h1 {
+    color: #fff; }
+  .reveal #facebook-code-change .special-branches {
+    color: #d6332b;
+    font-weight: bold; }
+  .reveal .groupon {
+    color: #fff; }
+  .reveal .learned {
+    color: #fff;
+    font-family: 'Graffiti Crayon';
+    font-size: 80px; }
+    .reveal .learned ul {
+      list-style-type: none; }
+    .reveal .learned h3 {
+      font-size: 200px; }
+    .reveal .learned .gangnam {
+      font-size: 50px; }

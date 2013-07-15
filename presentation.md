@@ -3,6 +3,13 @@ Selenium Conf 2013
 
 //
 
+                <section class="cars" id="cars-profiler" data-background="#4DD62B">
+                    <p>Profiling durante testes </p>
+                    <p>Compuware</p>
+                </section>
+
+recomendar talk sobre IE Driver
+
 http://www.colourlovers.com/palette/215539/Yellow_Tree_Frog
 http://www.colourlovers.com/palette/159844/Blue_Fox
 
@@ -46,18 +53,21 @@ Format:
     * How companies are implementing Selenium
         * Salesforce.com + cars.com
         * Facebook
-        * Mediawiki
+        * groupon
+
 
     * New tools
-        * Appium
-        * Selenium Builder
+        * Appium 
+        * selenium-builder
+        * Marionette
+        * Selenium Grid
 
     * Cutting-edge ideas
-        * Dima's talks
+        * layout comparison (domreactor + redglass / jenkins plugin @ shutterfly)
         * Continuous improvement - Noah Sussmann
-        * Marionette
-        * RedGlass
-        * Bringing selenium to the rest of the company
+        * google?
+
+        * Bringing selenium to the rest of the company (maybe?)        
 
     * Workshops
         * Selenium Grid
@@ -103,11 +113,11 @@ Ideias:
         * Selenium Builder
 
     * Novas ideias
-        * Continuous improvement - Noah Sussmann    
-        * Dima's talks
-        * RedGlass        
-        * Bringing selenium to the rest of the company
-        * Marionette
+        * layout comparison (domreactor + redglass / jenkins plugin @ shutterfly)
+        * Continuous improvement - Noah Sussmann
+        * google?
+
+        * Bringing selenium to the rest of the company (maybe?)        
 
 
 Como as empresas estão utilizando o Selenium?
@@ -202,15 +212,36 @@ Tools, tools, tools
 Facebook
 ---
 
-    * trunk and a release branch
+    * "move fast and break things"
+
+Como eles trabalham
 
     * Life of a code change
-
         1. Sandbox
         2. Code review
-        3. Trunk
-        4. Release branch
+        3. Trunk **
+        4. Release branch **
         5. 1 billion users
+
+automacao de deploys
+
+    1 week no trunk, depois release
+
+    * tonight we test in prod
+    X!!
+
+
+e porque funciona?
+
+    * todo engenheiro é responsável pela feature inteira, inclusive testes
+
+    * opt-in por releases diarios
+
+    * code-reviews / run during tests
+
+phabricator
+
+    * pic 
 
 Their suite
 ---  
@@ -218,55 +249,54 @@ Their suite
     * speed > completeness => results in 10 minutes  
     * convince people to write more focused tests
     * if a test becomes flaky, 24 hours to fix it or it's deleted
-
     * test in the same language as the application codebase
+
+    //probably not important
         * tried testing use ruby + watir, but didn't get much traction.
         * switched to php webdriver
         * they create link ids to html elements that aren't rendered in production, used for tests
         "Tests don't become as fragile".
 
-Mobile app
----
-
-    * was a simple web ui view
-        * swtiched to a pure native app, adopting mobile-first. Each team is responsible for creating a  mobile version of their feature
-
-
-Selenium Grid
----
-    * Vagrant
-
-    * Wifi was a problem
-
-    * Graylog
 
 Groupon
 ---
 
     * "Stability is a journey, not a destination"
 
+Tips:
+
     * Tips 'n' tricks
         - evaluate_script("jQuery.active") == 0
         - evaluate_script('$(":animated").length()') == 0
+
+    * ie tips
+        sessao
+        mover o mouse na janela durante execucao
+
+1)
 
     * fast feedback loop
         -> Fight to get build to 10 mins
         -> rspec / cucumber early failure notification (on test fail, email it and devs can look it before the build actually finishes) 
 
+    * Speed up tests
+        * does it have to be selenium (unit tests JS!)
+            * they have around 4000 javascript unit tests
+        * Can it be headless?
+        * Can you run jasmine instead?              
+
+
+2)
     * Flakey detector
         -> If a test was changed, run it 5kx times in 10 mins, in random order
 
+
+3)
     * Fix environment problems
         -> tests get blamed if environment is at fault
         -> Stardardize test boxes
             - Chef, puppet
             - Same capacity
-
-    * Speed up tests
-        * does it have to be selenium (unit tests JS!)
-            * they have around 4000 javascript unit tests
-        * Can it be headless?
-        * Can you run jasmine instead?      
 
     * Black hole proxy
         * em-proxy, capture external requests to return 200 OK (twitter/facebook,yahoo would ramdomly slow tests)               
@@ -280,7 +310,9 @@ Groupon
 So, what do we get from all of this?
 ---
 
-    * Suite de testes estáveis => flakey vai para outra suite
+    * Suite de testes estáveis => flakey vai para outra suite?
+                               => de olho nos testes que se tornam flakey!
+
     * speed > completeness => results in 10 minutes
     * convince people to write more focused tests  => jasmine, for example
 
@@ -296,35 +328,83 @@ New tools
 Appium
 ===
 
-    * Language agnostic    
+    * aplicacoes mobile nativas / hibridas
+
+    * sem gerar builds especificos
+
+    * Language agnostic
 
     * Implements JSON WebDriver Api => sample code
 
-    * Client para mac
+    * Client para mac / windows
 
-    * Piadas sobre Windows users! 
 
 SeleniumBuilder
 ===
     
     * Evolucao do Selenium IDE, mas para api do selenium 2
 
+Marionette
+===
+
+    * Driver para o Firefox
+    * Firefox OS Gecko (engine do Firefox, Thunderbird e Firefox OS)
+
+    /Applications/Firefox.app/Contents/MacOS/firefox -profile /Users/hien/Projects/gaia/profile-debug http://system.gaiamobile.org:8080 -no-remote
+
+    * Interacao com a interface do Firefox
+    * Estao portando para suportar a API do webdriver
+    * extensions
+
 Cutting-edge ideas
 ====    
-        * Dima's talks
+        * layout comparison (domreactor + redglass / jenkins plugin @ shutterfly)
         * Continuous improvement - Noah Sussmann
-        * Marionette
-        * RedGlass
-        * Bringing selenium to the rest of the company
+        * google?
 
-Dima
+        * Bringing selenium to the rest of the company (maybe?)        
+
+
+Testes de layout (screenshots)
+
+        * comparacao de layout (mostrar exemplos de discrepancia)
+
+        * domreactor / plugins-jenkins
+
+domreactor
+    
+        * comparar posicoes absolutas no dom (exemplo de offsetLeft)
+            * diferencas entre browsers
+
+        * visao computacional
+
+        * unir as duas estrategias
+
+        => dom reactor (paid!)
+
+Plugin Jenkins
+
+        * shutterfly (faz canecas customizadas)
+
+        * repositorio de screenshots quando testes passam
+
+        * build-flow no jenkins para comparacao
+
+
+Selenium Grid
 ---
-    * Selenium-grid-extras
-    * UX testing (screenshots)
+    * Vagrant
+
+    * Wifi was a problem
+
+    * Graylog
+
 
 
 Continuous Improvement
 ---
+
+
 
 * continuous delivery: 
     * deliver multiple times a day, powered by tests (selenium), CI
@@ -352,7 +432,32 @@ State of Union
 ====        
 
 
+*450 ppl
 
+* w3c
+    * working on specification
+
+* Number of downloads:
+    * Ruby => 5+ million
+    * Python => 1+ million
+
+* Driver implementations maintained by vendors
+
+* Selenium 3
+    * deprecate RC
+    * extension for mobile apps , using existing implementations
+
+* IDE and Builder
+
+* Important things people get wrong:
+    * there are no pageobject creators!
+    * don't expose selenium 
+        * should be high level enough / model services
+    * explicit is good; overuse of implicit waits; how they were originated / people would increase the wait in order 
+
+* short feedback cycles
+
+* try to fix flakey tests, separating them from main suite if needed
 
 
 

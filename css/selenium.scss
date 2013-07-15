@@ -23,7 +23,7 @@ dark 5E525C
   * variar as fontes
 * adicionar o icone do cars.com
 
-
+recomendar talk sobre IE Driver
 */
 
 $red_1: #EC4401;
@@ -277,6 +277,51 @@ body {
         top:     -20px;
         right:   -20px;
       }          
+    }
+
+    #cars-ps-comparison {
+      color:$green_1;
+    }
+
+    #releases-ps {
+      display: inline;    
+    }
+
+    #releases-ps-number {     
+      font-size:250px;
+
+    }
+
+    #facebook-title {
+      h1 {
+        color: #fff;
+      }
+    }
+
+    #facebook-code-change {
+      .special-branches {
+        color: $red_2;
+        font-weight: bold;
+      }
+    }
+
+    .groupon {
+      color:#fff;
+    }
+
+    .learned {
+      color:#fff; 
+      font-family:'Graffiti Crayon';
+      font-size: 80px;
+      ul {
+        list-style-type: none;
+      }
+      h3 {
+        font-size:200px;  
+      }     
+      .gangnam {
+        font-size: 50px;
+      }
     }
 
 }
