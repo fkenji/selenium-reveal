@@ -36,7 +36,7 @@
 
             <div class="slides">
 
-                <section id="title">
+                <section id="title" data-background="images/boston_tea_party.jpg">
                     <h1>Selenium Conf<span>2013</span></h1>
                 </section>
 
@@ -54,12 +54,12 @@
                 </section>
 
                 <section id="about-us">
-                    <h3>Manchester </h3>
+                    <img src="images/manchester-united-logo.png"/>
 
-                    <p> ~500 testes automatizados </p>
+                    <p> <span class="green_1"> ~500 </span> testes  </p>
 
-                    <p> Selenium Grid </p>
-                    <p> 3 slaves </p>
+                    <p> Selenium <span class="orange">Grid</span> </p>
+                    <p> <span class="red_1">3</span> slaves </p>
 
                 </section>                
 
@@ -96,7 +96,7 @@
                         <p>. . . . . . . </p>
                         <div class="companies">
                             <img src="images/salesforce.png"></img>
-                            
+                            <img src="images/cars-logo.png"></img>
                             <img src="images/fb.png"></img> 
                             
                             <img src="images/groupon.png"></img>
@@ -106,16 +106,18 @@
                     <section id="ferramentas">
                         <h1>Ferramentas</h1>
                         <ul>
-                            <li>appium (mobile)
+                            <li>appium 
                             <li>selenium builder
+                            <li>marionette
                         </ul>
                     </section>
 
                     <section id="inovacoes">
                         <h1>Inovacoes</h1>
                         <ul>
-                            <li>Continuous Improvement | noah sussmann
-                            <li>State of the Union | simon stewart
+                            <li> Testes de UX / Layout
+                            <li> Continuous Improvement
+                            <li> State of the Union / Selenium 3
                         </ul>
                     </section>
                 </section>    
@@ -142,14 +144,11 @@
 
                     <p class="autotest" style="">
                         autotest
-
-                       <p> 
-                        issue tracker
-                        <img src="images/gear2.png" />
-                        detector de testes instaveis
-
-                    <span class="fragment huh"> (?) </span>
-                    </p>
+                    </p> 
+                    <ul>
+                        <li>issue tracker
+                        <li>detector de testes instaveis
+                    </ul>
                 </section>
 
                 <!--section class="salesforce" id="salesforce-flaky" data-background="#5E525C">
@@ -173,11 +172,11 @@
                     <p>
                         <quote>"Nao utilizamos o selenium-grid"</quote>
                     </p>
-                    <img src="images/cloud.png"/>
-
+                    
                     <div class="fragment">
+                        <img src="images/cloud.png"/>
                         <h1>
-                            JClouds
+                            Cloud
                         </h1>
                         <ul>
                             <li>VMWare 
@@ -192,6 +191,7 @@
 
                 <section class="salesforce" data-background="#EC4401">
                     <p> O problema de rodar na cloud </p>
+                    
                 </section>                
 
                 <section id="salesforce-why" data-background="#EC4401">
@@ -200,7 +200,6 @@
                     <ul>
                         <li> Degradacao das maquinas</li>
                         <li> Poder computacional</li>
-                        <li> Pre-provisionamento de instancias</li>
                     </ul>
 
                 </section>
@@ -211,7 +210,8 @@
                 </section>
 
                 <section class="cars" id="cars-stack" data-background="#4DD62B">
-                    <p>  3000 testes por build</p>         
+                    <p>  Testes manuais => Automatizados</p>
+                    <p>  3000 testes por build</p>
 
                 </section>               
                 
@@ -220,14 +220,15 @@
 
                     <section class="cars" id="cars-releases" data-background="#4DD62B">
                         <div id="bottom-shoryuken" > <span id="low-blow"> 40</span> releases / ano </div>
-                        <img src="images/shoryuken.png" />
-                        <div id="top-shoryuken" >
-                            <span id="high-blow"> 
-                             700 
-                            </span> releases
-                              / ano 
+                        <div class="fragment">
+                            <img src="images/shoryuken.png" />
+                            <div id="top-shoryuken" >
+                                <span id="high-blow"> 
+                                 700 
+                                </span> releases
+                                  / ano 
+                            </div>
                         </div>
-
                         
                     </section>    
 
@@ -260,14 +261,14 @@
 
 
                 <section class="facebook" id="facebook-code-change" data-background="#3A85D6">
-                    <h1> Ciclo: </h1>
+                    <h1> Ciclo </h1>
                     <ol>
                         <li> Sandbox / dev
                         <li> Code review
                         <li> <span class="special-branches">Trunk</span> branch
                         <li> <span class="special-branches">Release</span> branch
                         <li> 1 Bilhao de usuarios
-                    </ol>
+                    </ol>              
                 </section>
 
                 <section class="facebook" id="facebook-trunk-cycle" data-background="#3A85D6">
@@ -289,20 +290,24 @@
                 </section>
 
                 <section class="facebook" id="facebook-responsibility" data-background="#3A85D6">
-                    <ol>
+                    <ol style="float:left;">
                         <li> Sandbox / dev
                         <li> Code review
                         <li> <span class="special-branches">Trunk</span> branch
                         <li> <span class="special-branches">Release</span> branch
                         <li> 1 Bilhao de usuarios
                     </ol>
+                    <div style="float:right;font-size:300px; position:absolute;left:1.5em;top:1em;" >
+                    }
+                    </div>
+                    <div style="float:right;font-size:100px; " >
                     1 engenheiro
+                    </div>
                 </section>      
 
-                <section class="facebook" id="facebook-responsibility" data-background="#3A85D6">
+                <section class="facebook" id="facebook-optin" data-background="#3A85D6">
                     <ul>
                         <li>opt-in por releases diarios
-                        <li>code review
                     </ul>
                 </section>    
 
@@ -313,7 +318,7 @@
 
                 <section class="facebook" id="facebook-test-suite" data-background="#3A85D6">
                     <ul>
-                        <li> velocidade > completo => 10 minutos  
+                        <li> velocidade > cobertura => 10 minutos  
                         <li> testes mais focados
                         <li> testes instaveis => 24 horas para serem corrigidos
                         <li> Mesma linguagem de programacao para testes e aplicacao

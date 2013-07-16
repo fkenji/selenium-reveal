@@ -10,7 +10,7 @@ red EC4401
 brown CC9B25
 orange FF6A00
 green 13CD4A
-      }
+      4DD62B
 
 blue 7B6ED6
      3A85D6
@@ -43,7 +43,7 @@ body {
 .reveal {
   font-family: 'Yanone Kaffeesatz';
   color: #5e525c;
-  font-size: 44px; }
+  font-size: 50px; }
 
 .reveal h1,
 .reveal h2,
@@ -79,8 +79,28 @@ body {
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em; }
-  .reveal span.dark-highlight-bg {
+  .reveal .dark-highlight-bg {
     color: white; }
+  .reveal .red_1 {
+    color: #EC4401; }
+  .reveal .red_2 {
+    color: #D6332B; }
+  .reveal .brown {
+    color: #CC9B25; }
+  .reveal .orange {
+    color: #FF6A00; }
+  .reveal .green_1 {
+    color: #13CD4A; }
+  .reveal .green_2 {
+    color: #4DD62B; }
+  .reveal .blue_1 {
+    color: #7B6ED6; }
+  .reveal .blue_2 {
+    color: #3A85D6; }
+  .reveal .dark {
+    color: #5E525C; }
+  .reveal .yellow {
+    color: #FFE700; }
   .reveal p.autotest {
     font-size: 150px;
     font-family: 'Franchise'; }

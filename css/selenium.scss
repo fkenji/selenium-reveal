@@ -58,7 +58,7 @@ $jclouds_font_color: $blue_2;
 $salesforce_main_font_color: $dark;
 $cars_main_font_color: #fff;
 
-
+$default_font_size: 50px;
 
 @font-face {
   font-family: "Klinic Slab Book";
@@ -82,7 +82,7 @@ body {
 .reveal {
   font-family: 'Yanone Kaffeesatz';
   color: $main_font_color;
-  font-size: 44px;
+  font-size: $default_font_size;
 }
 
 .reveal h1,
@@ -126,9 +126,41 @@ body {
         margin-bottom: 0.5em;
     }
 
-    span.dark-highlight-bg {
+    .dark-highlight-bg {
         color:white;
     }
+
+    .red_1  {
+      color: #EC4401; 
+    }
+    .red_2  {
+      color: #D6332B; 
+    }
+    .brown  {
+      color: #CC9B25; 
+    }
+    .orange {
+      color: #FF6A00; 
+    }
+    .green_1{
+      color: #13CD4A; 
+    }
+    .green_2{
+      color: #4DD62B; 
+    }
+    .blue_1 {
+      color: #7B6ED6; 
+    }
+    .blue_2 {
+      color: #3A85D6; 
+    }
+    .dark   {
+      color: #5E525C; 
+    }
+    .yellow {
+      color: #FFE700; 
+    }
+
 
     p.autotest {
       font-size:150px; 
