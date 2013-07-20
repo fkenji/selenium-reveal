@@ -37,7 +37,7 @@
             <div class="slides">
 
                 <section id="title" data-background="images/boston_tea_party.jpg">
-                    <h1>Selenium Conf<span>2013</span></h1>
+                    <h1>Selenium Conf<span>2013</span></h1> 
                 </section>
 
                 <section id="about-me">
@@ -87,12 +87,12 @@
 
 
                 <section class="dark-slide" id="agenda" data-background="#5E525C">
-                        <h1>Topicos</h1>           
+                        <h1>Tópicos</h1>           
                 </section>
 
                 <section class="dark-slide"  data-background="#5E525C">               
                     <section id="como-estao">
-                        <h1>Como estao usando o Selenium?</h1>
+                        <h1>Como estão usando o Selenium?</h1>
                         <p>. . . . . . . </p>
                         <div class="companies">
                             <img src="images/salesforce.png"></img>
@@ -109,11 +109,12 @@
                             <li>appium 
                             <li>selenium builder
                             <li>marionette
+                            <li>elemental-selenium
                         </ul>
                     </section>
 
                     <section id="inovacoes">
-                        <h1>Inovacoes</h1>
+                        <h1>Inovações</h1>
                         <ul>
                             <li> Testes de UX / Layout
                             <li> Continuous Improvement
@@ -134,41 +135,35 @@
                         <span class="huge blockish">1M</span> de testes selenium rodados ... por <span class="dark-highlight-bg">dia</span>
                     </p>
                     <p>
-                        <span class="huge blockish">75K</span> testes (ಠ_ಠ) - subruns
+                        <span class="huge blockish">75K</span> testes (ಠ_ಠ)
                     </p>
                 </section>
 
                 <section class="salesforce" id="salesforce-autotest" data-background="#EC4401">
 
-                    <p class="autotest" style="">
+                    <h1>
                         autotest
-                    </p> 
+                    </h1> 
                     <ul>
                         <li>issue tracker
-                        <li>detector de testes instaveis
+                        <li>detector de testes instáveis
                     </ul>
                 </section>
-
-                <!--section class="salesforce" id="salesforce-flaky" data-background="#5E525C">
-
-                    <p><span class="big">flaky</span> </p>
-
-                    <p class="dictionary">
-                         informal (of a device or software) prone to break down; 
-                         <span class="feature">unreliable</span>
-                    </p>
-                </section-->                
+ 
 
 
                 <section id="salesforce-commit" data-background="#5E525C">
                     <p><span class="dark-highlight-bg huge blockish">99%</span> dos testes devem passar</p>
-                    <p> "Ninguem entrega enquanto não arrumar!" >=(</p>
-                </section>                                
+                </section>          
+
+                <section id="salesforce-social" data-background="#5E525C">
+                    <p><img src="images/social.png"/></p>
+                </section>                                                
             
 
                 <section class="salesforce" id="salesforce-grid" data-background="#EC4401">
                     <p>
-                        <quote>"Nao utilizamos o selenium-grid"</quote>
+                        <quote>"Não utilizamos o selenium-grid"</quote>
                     </p>
                     
                     <div class="fragment">
@@ -185,18 +180,13 @@
                         </ul>
                     </div>                    
                 </section>
-
-
-                <section class="salesforce" data-background="#EC4401">
-                    <p> O problema de rodar na cloud </p>
-                    
-                </section>                
+                        
 
                 <section id="salesforce-why" data-background="#EC4401">
 
                     <img src="images/huh.png"/>
                     <ul>
-                        <li> Degradacao das maquinas</li>
+                        <li> Degradação das máquinas</li>
                         <li> Poder computacional</li>
                     </ul>
 
@@ -204,12 +194,12 @@
 
 
                 <section class="cars" id="cars-title" data-background="#4DD62B">
-                    <h1>Cars.com<h1>
+                    <img src="images/cars-logo-big.png" />
                 </section>
 
                 <section class="cars" id="cars-stack" data-background="#4DD62B">
-                    <p>  Testes manuais => Automatizados</p>
-                    <p>  3000 testes por build</p>
+                    <p>  <span id="manual">Manuais</span> -> <span id="auto">Automatizados</span></p>
+                    <p>  <span class="huge blockish">3000</span>testes por build</p>
 
                 </section>               
                 
@@ -219,7 +209,7 @@
                     <section class="cars" id="cars-releases" data-background="#4DD62B">
                         <div id="bottom-shoryuken" > <span id="low-blow"> 40</span> releases / ano </div>
                         <div class="fragment">
-                            <img src="images/shoryuken.png" />
+                            <img src="images/ken_shoryuken_fierce.gif" />
                             <div id="top-shoryuken" >
                                 <span id="high-blow"> 
                                  700 
@@ -260,18 +250,11 @@
 
                 <section class="facebook" id="facebook-code-change" data-background="#3A85D6">
                     <h1> Ciclo </h1>
-                    <ol>
-                        <li> Sandbox / dev
-                        <li> Code review
-                        <li> <span class="special-branches">Trunk</span> branch
-                        <li> <span class="special-branches">Release</span> branch
-                        <li> 1 Bilhao de usuarios
-                    </ol>              
+                    <img src="images/facebook-cycle-1.png" />              
                 </section>
 
                 <section class="facebook" id="facebook-trunk-cycle" data-background="#3A85D6">
-                    <p> Trunk vai para branch de release em 1 semana</p>
-                    <p> Release vai para prod em alguns dias </p>
+                    <img src="images/timeline.png" />
                 </section>
 
                 <section class="facebook" id="facebook-test-prod" data-background="#3A85D6">
@@ -283,49 +266,45 @@
                     <img src="images/no.jpg"/>
                 </section>
 
-                <section class="facebook" id="facebook-code-change" data-background="#3A85D6">
+                <section class="facebook" id="facebook-why-it-works" data-background="#3A85D6">
                     <h1> E porque funciona? </h1>
                 </section>
 
                 <section class="facebook" id="facebook-responsibility" data-background="#3A85D6">
-                    <ol style="float:left;">
-                        <li> Sandbox / dev
-                        <li> Code review
-                        <li> <span class="special-branches">Trunk</span> branch
-                        <li> <span class="special-branches">Release</span> branch
-                        <li> 1 Bilhao de usuarios
-                    </ol>
-                    <div style="float:right;font-size:300px; position:absolute;left:1.5em;top:1em;" >
-                    }
-                    </div>
-                    <div style="float:right;font-size:100px; " >
-                    1 engenheiro
-                    </div>
+                    <img src="images/facebook-cycle-2.png" />              
                 </section>      
 
-                <section class="facebook" id="facebook-optin" data-background="#3A85D6">
-                    <ul>
-                        <li>opt-in por releases diarios
-                    </ul>
+                <section class="facebook" id="facebook-optin" data-background="#fff">
+
+                    <img src="images/ical-icon.png" />
+                    
+                    <p> <span class="huge blockish">Opt-in </span>  releases diários </p>
+                    
                 </section>    
 
-                <section class="facebook" id="facebook-phabricator" data-background="#3A85D6">
+                <section class="facebook" id="facebook-phabricator" data-background="#fff">
                     <img src="images/phabricator.png" />
                     <a href="http://phabricator.org/">http://phabricator.org/</a>
                 </section>    
 
-                <section class="facebook" id="facebook-test-suite" data-background="#3A85D6">
+
+                <section class="facebook" id="facebook-test-suite" data-background="#fff">
                     <ul>
-                        <li> velocidade > cobertura => 10 minutos  
-                        <li> testes mais focados
-                        <li> testes instaveis => 24 horas para serem corrigidos
-                        <li> Mesma linguagem de programacao para testes e aplicacao
+                        <li> <span class="focus">velocidade </span> > cobertura
+                        <li> testes mais <span class="focus">específicos</span>
                     </ul>
-                </section>                    
+                </section>
+
+                <section class="facebook" id="facebook-more-about-tests" data-background="#fff">
+                    <ul>
+                       <li><span class="focus">24</span> horas para testes instáveis
+                        <li><span class="focus">Mesma</span> linguagem de programação nos testes
+                    </ul>
+                </section>
 
                 <section class="groupon" id="groupon-title" data-background="#5E525C">
-                    <h1>Groupon</h1>
-                    > "Stability is a journey, not a destination"
+                    <img src="images/groupon-logo-big.png"></img>
+                    <p> "Stability is a journey, not a destination" </p>
                 </section>
 
                 <section class="groupon" id="groupon-jquery" data-background="#5E525C">
@@ -339,40 +318,44 @@ evaluate_script('$(":animated").length()') == 0
                 </section>
 
                 <section class="groupon" id="groupon-iedriver" data-background="#5E525C">
-                    <h5>IEDriver</h5>
+                    <h5><span class="focus-ie">IE</span>Driver</h5>
                     <ul>
-                        <li>sessao
-                        <li>mover o mouse na janela durante execucao
+                        <li>Remote Desktop vs VNC
+                        <li>Não mova o mouse durante execução!
                     </ul>
                 </section>
 
                 <section class="groupon" id="groupon-tests" data-background="#5E525C">
                     <ul>
-                        <li>Feedback rapido => 10 minutos
-                        <li>Notificacao rapida de erros
+                        <li>Feedback rápido: <span class="focus">10</span> minutos
+                        <li>Notificacao <span class="focus">antecipada</span> de erros
                     </ul>
                 </section>
 
                 <section class="groupon" id="groupon-tests-focused" data-background="#5E525C">
                     <h5>Testes mais focados</h5>
                     <ul>
-                        <li>Precisa ser no selenium?
-                        <li>Nao poderia ser no Jasmine? (4000 testes javascript                            
-                        <li>Nao pode ser headless?                        
+                        <li><span class="focus">Precisa</span> ser no selenium?
+                        <li>Nao poderia ser no <span class="focus">Jasmine</span>? 
+                        <li>Testes <span class="focus">unitários</span> na aplicação?
                     </ul>
+
+                    <aside class="notes">
+                        4000 testes javascript
+                    </aside>
                 </section>
 
 
                 <section class="groupon" id="groupon-tests-flakey" data-background="#5E525C">
-                    <h5>Detector de testes instaveis</h5>
+                    <h5>Testes instáveis?</h5>
                     <ul>
-                        <li>rodar 5000 vezes em 10 minutos, em ordem randomica                        
+                        <li>rodar <span class="focus">5000</span> vezes em <span class="focus">10</span> minutos, em ordem <span class="focus">randômica</span>
                     </ul>
                 </section>
 
 
                 <section class="groupon" id="groupon-chef-puppet" data-background="#5E525C">
-                    <h5> Problemas de ambiente </h5>
+                    <h5> Ambiente padronizado</h5>
                     <p> Chef</p>
                     <p> Puppet</p>
                 </section>
@@ -385,16 +368,18 @@ evaluate_script('$(":animated").length()') == 0
                         <li> Screenshot do sistema operacional
                         <li> Gravar video / artefato Jenkins
                     </ul>
-
+                    <p>
+                        <a href="https://github.com/groupon/Selenium-Grid-Extras">https://github.com/groupon/Selenium-Grid-Extras</a>
+                    </p>
                 </section>                
 
                 <section class="learned" id="lessons-learned" data-background="images/blackboard.jpg">
-                    <h3 style="color:#fff; font-family:'Graffiti Crayon'"> Lessons learned</h3>
+                    <h3> Lessons learned</h3>
 
                     <ul>
                         <li> Velocidade > cobertura
                         <li> Testes mais focados
-                        <li> Atencao aos testes instaveis
+                        <li> Atencao aos testes instaveis 
                     </ul>
                 </section>
 
@@ -402,58 +387,77 @@ evaluate_script('$(":animated").length()') == 0
                     <h3>Ferramentas</h3>
                 </section>
 
-                <section class="tools">
-                    <h3>Appium</h3>
+                <section class="tools" id="appium">
+        
+                    <img src="images/appium.png"/>
 
-                    <ul>
-                        <li> Aplicacoes mobile
-                        <li> Sem gerar builds modificados
-                        <li> <a href="http://appium.io">http://appium.io</a>
-                    </ul>
+                    <p> 
+                        <a href="http://appium.io">http://appium.io</a>
+                    </p>
                 </section>
 
-                <section class="tools">
-                    <h3>Selenium Builder</h3>
-                    <a href="http://appium.io">http://sebuilder.github.io/se-builder/</a>
+                <section class="tools" id="selenium-builder">
+                    <img src="images/selenium-builder.png"/>
+                    <a href="http://sebuilder.github.io/se-builder/">http://sebuilder.github.io/se-builder/</a>
                 </section>                                
 
-                <section class="tools">
+                <section class="tools" data-background="images/firefox-bg.png">
                     <h3>Marionette</h3>
                     <ul>
-                        <li> FirefoxOS
-                        <li> nao implementa 100% a API do webdriver
+                        <li> Firefox<span class="focus">OS</span>
+                        <li> <span class="focus">não</span> implementa todo o webdriver API
                     </ul>
                 </section>                                
 
-                <section class="inovacoes">
-                    <h3>Inovacoes</h3>
+
+                <section class="tools">
+                    <img src="images/elemental-selenium.png" />
+                    <a href="http://elemental-selenium.com/">http://elemental-selenium.com/</a>                    
+                </section>                                
+
+                <section class="inovacoes" id="news-title">
+                    <h3>Inovações</h3>
                 </section>
 
-                <section class="layout">
+                <section class="layout" id="layout-tests">
                     <h3>Testes de layout</h3>
-                    img de discrepancia
+                </section>
 
+                <section class="layout" id="layout-ok">
+                    <img src="images/layout-ok.png"></img>
+                    <p><span class="ok fragment">✓</span> testCadastrarUsuario</p>
+                </section>
+
+                <section class="layout" id="layout-fail">
+                    <img src="images/layout-fail.png"></img>
+                    <p><span class="ok fragment">✓</span> testCadastrarUsuario</p>                
+                </section>
+
+                <section class="layout" id="dontwant">
+                    <img src="images/doNotWant.png"></img>
+                </section>                
+
+                <section class="layout" id="layout-tests-options">
                     <ul>
                         <li> DOMReactor
-                        <li> Plugin do Jenkins
+                        <li> Plugin do Jenkins (Shutterfly)
                     </ul>
                 </section>
 
-                <section class="layout">
-                    <h3>DOM Reactor</h3>
+                <section class="layout" id="dom-reactor">
+                    <img src="images/domreactor.png"> </img>
                     <ul>
-                        <li> Comparacao posicional no DOM
-                        <li> Visao computacional
+                        <li> Comparação posicional no DOM
+                        <li> Visão computacional
                     </ul>
                 </section>                
 
                 <section class="layout">
-                    <h3>Plugins Jenkins</h3>
+                    <h3>Plugin do Jenkins</h3>
                     <ul>
-                        <li> shutterfly (faz canecas customizadas)
-                        <li> repositorio de screenshots quando testes passam
-                        <li> build-flow no jenkins para comparacao
-                        <li> Nao foi lancado ainda :(
+                        <li> <span class="focus">Repositório</span> de screenshots 
+                        <li> Build-flow
+                        <li> Não foi lançado ainda :(
                     </ul>
                 </section>                
 
@@ -463,32 +467,47 @@ evaluate_script('$(":animated").length()') == 0
 
                 <section class="continuous-improvement">
                     <h1>Continuous Delivery</h1>
-                    <p>multiplas entregas</p>
+                    <p>múltiplas entregas</p>
                     <p>funcionalidades on/off</p>
-                    <p><a href="http://continuousdelivery.com/">http://continuousdelivery.com/ </a> </p>
+                    
                 </section>
 
                 <section class="continuous-improvement">
                     <h1>Sistemas complexos </h1>
-                    <p> Comportamentos novos sao encontrados em producao</p>
-                    <p> Nao seguem uma especificacao
+                    <p> Comportamentos novos são encontrados em produção</p>
+                    <p> Não seguem uma especificação
                 </section>
 
                 <section class="continuous-improvement">
-                    <h1>... vs sistemas de missao critica </h1>
-                    <p>10 anos em producao </p>
+                    <h2>... vs sistemas de missão <span class="focus">crítica</span> </h2>
+                    <p><span class="focus">+10</span> anos em desenvolvimento </p>
                 </section>                
 
                 <section class="continuous-improvement">
-                    <h1> Papel de QA </h1>
-                    <p> Pontos que os testes automatizados nao conseguem atuar em cima </p>
+                    <h1 class="focus">QA? </h1>
+
                     <p> Testes de usabilidade </p>
-                    <p> Testes exploratorios </p>
-                    <p> Monitoracoes em producao </p>
+                    <p> Testes exploratórios </p>
+                    <p> Monitorações em produção </p>
                 </section>
 
                 <section class="continuous-improvement">
-                    <p> Proximidade ao log! </p>
+                    <pre>
+                        <code class="bash">> git log
+Merge: 64c77c5 f662c1d
+Author: Fabio Kenji
+Date:   Thu Jul 11 11:36:54 2013 -0700
+
+    Refatorando componente de paginação
+
+commit a78c16c49c65c0e3834a53f085038f93e94aa574
+Author: André Vicente 
+Date:   Thu Jul 11 12:36:33 2013 -0600
+    Corrigindo bug das datas
+    
+                        </code>
+                    </pre>
+                    <p> Verifique o <span class="focus">log!</span> </p>
                 </section>
 
 
@@ -499,20 +518,27 @@ evaluate_script('$(":animated").length()') == 0
                 <section class="state-union">
                     <p> W3C </p>
                     <p> <a href="http://www.w3.org/TR/webdriver/">http://www.w3.org/TR/webdriver/</a>
-                </section>                         
+                </section>      
+
+
 
                 <section class="state-union">
-                    <p> Selenium 3 </p>
+                    <p>
+                        <img src="images/selenium3.png"/>
+                    </p>
                     <ul>
-                        <li> RC deprecated
-                        <li> Foco em mobile apps, em conjunto com ferramentas existentes
+                        <li> Remoção do <span class="focus">RC</span>
+                        <li> Foco em <span class="focus">Mobile</span>
                     </ul>
                 </section>
 
                 <section class="state-union">
-                    <p> Coisas importantes que as pessoas fazem de errado </p>
-                    <p> Implicit Waits exagerados </p>
+                    <h2> Dicas </h2>
                 </section>    
+
+                <section class="state-union">
+                    <p> Implicit Waits exagerados </p>
+                </section>                    
 
                 <section class="state-union">                
                     <p> Nao exponha a API de selenium:
@@ -529,7 +555,7 @@ telaExtrato.getSelenium().click("#login"); // :_(
                         </pre>
                     </section>
                 <section class="state-union">
-                    <p> Modele servicos: </p>
+                    <p> Modele <span class="focus">serviços</span> </p>
 
                         <pre>
                             <code class="java">
@@ -541,7 +567,7 @@ tela.logar(new Usuario("Fabio"));
                 </section>
 
                 <section class="state-union">
-                    <p> Encapsule a API de selenium: </p>
+                    <p> <span class="focus">Encapsule</span> a API de selenium</p>
 
                         <pre>
                             <code class="java">
@@ -567,13 +593,14 @@ SeleniumPagSeguro seleniumWebDriver =
                 </section>
 
                 <section class="state-union">
-                    <p> Automacao de selenium Grid </p>
-                    <p> Notificacao de erros em testes </p>
-
+                    <p> Automação de selenium grid </p>
+                    <p> Notificação de erros em testes </p>
+                    <p> Selenium-grid-extras</p>
                 </section>
 
                 <section class="state-union">
                     <p> Perguntas? :D </p>
+                    <img src="images/huh.png"/>
                 </section>
 
             </div>

@@ -43,7 +43,12 @@ body {
 .reveal {
   font-family: 'Yanone Kaffeesatz';
   color: #5e525c;
-  font-size: 50px; }
+  font-size: 60px; }
+  .reveal ul {
+    list-style-type: none; }
+  .reveal a {
+    text-decoration: none;
+    font-size: 40px; }
 
 .reveal h1,
 .reveal h2,
@@ -101,9 +106,6 @@ body {
     color: #5E525C; }
   .reveal .yellow {
     color: #FFE700; }
-  .reveal p.autotest {
-    font-size: 150px;
-    font-family: 'Franchise'; }
   .reveal span.huh {
     font-size: 70px;
     color: #fff; }
@@ -131,12 +133,17 @@ body {
     list-style-type: none; }
   .reveal #about-me ul li {
     padding-top: 0.7em; }
-  .reveal #como-estao .companies {
-    margin-top: 0.7em; }
+  .reveal #como-estao {
+    font-size: 40px; }
     .reveal #como-estao .companies img {
       margin-left: 1em; }
   .reveal .salesforce {
     color: #5e525c; }
+  .reveal #salesforce-tests {
+    font-size: 50px; }
+  .reveal #salesforce-autotest h1 {
+    font-family: 'Franchise';
+    font-size: 200px; }
   .reveal #salesforce-grid h1 {
     font-size: 200px;
     color: #3a85d6; }
@@ -169,6 +176,12 @@ body {
     position: absolute;
     top: -20px;
     right: -20px; }
+  .reveal #cars-stack {
+    font-size: 90px; }
+    .reveal #cars-stack #manual {
+      color: #fff; }
+    .reveal #cars-stack #auto {
+      color: #ec4401; }
   .reveal #cars-ps-comparison {
     color: #13cd4a; }
   .reveal #releases-ps {
@@ -177,18 +190,64 @@ body {
     font-size: 250px; }
   .reveal #facebook-title h1 {
     color: #fff; }
+  .reveal #facebook-why-it-works {
+    color: #fff; }
+  .reveal #facebook-optin {
+    color: #3a85d6; }
+    .reveal #facebook-optin .huge {
+      font-size: 200px; }
   .reveal #facebook-code-change .special-branches {
     color: #d6332b;
     font-weight: bold; }
+  .reveal .facebook .focus {
+    color: #3a85d6; }
+  .reveal #facebook-test-suite {
+    font-size: 110px; }
+    .reveal #facebook-test-suite ul {
+      list-style-type: none; }
+  .reveal #facebook-more-about-tests {
+    font-size: 75px; }
+    .reveal #facebook-more-about-tests ul {
+      list-style-type: none; }
   .reveal .groupon {
     color: #fff; }
+    .reveal .groupon .focus-ie {
+      color: #5fccf8; }
+    .reveal .groupon .focus {
+      color: #ec4401; }
+  .reveal #groupon-title {
+    font-size: 50px; }
+  .reveal #groupon-tests ul {
+    list-style-type: none; }
+  .reveal #groupon-tests .focus {
+    font-size: 120px; }
   .reveal .learned {
     color: #fff;
     font-family: 'Graffiti Crayon';
     font-size: 80px; }
     .reveal .learned ul {
-      list-style-type: none; }
+      list-style-type: none;
+      font-size: 90px;
+      letter-spacing: 0.1em; }
     .reveal .learned h3 {
       font-size: 200px; }
     .reveal .learned .gangnam {
       font-size: 50px; }
+  .reveal .tools ul {
+    list-style-type: disc; }
+  .reveal .tools .focus {
+    color: #d6332b; }
+  .reveal .layout .ok {
+    color: #13cd4a; }
+  .reveal .layout ul {
+    list-style-type: disc; }
+  .reveal .layout .focus {
+    color: #ff6a00; }
+  .reveal .continuous-improvement .focus {
+    color: #ff6a00; }
+  .reveal .continuous-improvement code {
+    font-size: 30px; }
+  .reveal .state-union .focus {
+    color: #ff6a00; }
+  .reveal .state-union code {
+    font-size: 28px; }
