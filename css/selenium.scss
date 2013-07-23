@@ -298,6 +298,10 @@ body {
       color: $red_1;
     }
 
+    #salesforce-1 {
+      font-size: 48px;
+    }
+
     #cars-testing {
       span {
         color: $blue_2;
@@ -484,6 +488,13 @@ body {
       
       code {
         font-size: 28px;
+      }
+    }
+
+    .cars {
+      .focus {
+        font-size: 100px;
+        color:$red_2;
       }
     }
 
