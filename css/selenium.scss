@@ -63,18 +63,18 @@ $cars_main_font_color: #fff;
 $default_font_size: 60px;
 
 @font-face {
-  font-family: "Klinic Slab Book";
-  src: url("../fonts/KlinicSlabBook.otf");
-}
-
-@font-face {
-  font-family: "Klinic Slab Bold";
-  src: url("../fonts/KlinicSlabBold.otf");
-}
-
-@font-face {
   font-family: "Franchise";
   src: url("../fonts/Franchise-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Yanone Kaffeesatz";
+  src: url("../fonts/YanoneKaffeesatz-Regular.otf");
+}
+
+@font-face {
+  font-family: "Graffiti Crayon";
+  src: url("../fonts/Smudgie Crayon.ttf");
 }
 
 body {
@@ -120,16 +120,6 @@ body {
 
     span.big {
         font-size: 150px;
-    }
-
-    p.dictionary {
-      font-family: 'Klinic Slab Book'; 
-      margin-top: 40px;
-
-      .feature {
-        display: block;
-        color: #fff;
-      }
     }
 
     .blockish {
